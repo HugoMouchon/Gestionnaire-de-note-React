@@ -3,6 +3,6 @@ import style from './style.module.scss';
 
 export default function PageNotFound() {
   return (
-    <div>PageNotFound</div>
+    <div>404 - Page non trouvé</div>
   )
 }
