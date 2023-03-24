@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 export const noteSlice = createSlice({
     name: "noteSlice",
     initialState: {
-        noteListe: []
+        noteList: []
     },
     reducers: {
         setNoteListe: (currentSlice, action) => {
-            currentSlice.noteListe = action.payload;
+            currentSlice.noteList = action.payload;
         }
     }
 })
