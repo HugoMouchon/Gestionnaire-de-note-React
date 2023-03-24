@@ -9,7 +9,7 @@ export default function NoteList() {
     const navigate = useNavigate();
 
     return (
-        <div className={`row justify-content-center ${style.cards_container}`}>
+        <div className={`row justify-content-center`}>
             {noteList.map((note) => {
                 return (
                     <div className={style.card_container}>

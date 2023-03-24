@@ -4,12 +4,13 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { setNoteListe } from "store/note/note-slice";
+import style from 'style.module.scss';
 
 export function App() {
 
   const dispatch = useDispatch();
 
-  async function fetchAllNotes(){
+  async function fetchAllNotes() {
     const noteList = await NoteAPI.fetchAll();
     dispatch(setNoteListe(noteList));
   }
@@ -20,8 +21,10 @@ export function App() {
 
   return (
     <div className="container-fluid">
-      <Header/>
-      <Outlet/>
+      <Header />
+      <div className={style.outlet_container}>
+        <Outlet />
+      </div>
     </div>
   );
 }

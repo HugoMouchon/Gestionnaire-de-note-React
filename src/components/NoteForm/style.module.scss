@@ -1,0 +1,19 @@
+@use "../../sass/colors" as c;
+
+.container {
+    padding: 50px;
+    background-color: c.$bg-color-noteCreate;
+    border-radius: 22px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.submit_button {
+    text-align: right;
+}
+
+.title_input_container {
+    max-width: 300px;
+}
