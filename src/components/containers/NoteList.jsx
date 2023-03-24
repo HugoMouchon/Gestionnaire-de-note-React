@@ -12,7 +12,7 @@ export default function NoteList() {
         <div className={`row justify-content-center`}>
             {noteList.map((note) => {
                 return (
-                    <div className={style.card_container}>
+                    <div key={note.id} className={style.card_container}>
                         <TextCard
                             title={note.title}
                             subtitle={note.subtitle}

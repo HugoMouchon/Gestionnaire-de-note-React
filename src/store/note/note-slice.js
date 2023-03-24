@@ -8,10 +8,13 @@ export const noteSlice = createSlice({
     reducers: {
         setNoteListe: (currentSlice, action) => {
             currentSlice.noteList = action.payload;
-        }
+        },
+        addNote: (currentSlice, action) => {
+            currentSlice.noteList.push(action.payload);
+        },
     }
 })
 
 export const noteReducer = noteSlice.reducer;
 
-export const { setNoteListe } = noteSlice.actions;  
+export const { setNoteListe, addNote } = noteSlice.actions;  
